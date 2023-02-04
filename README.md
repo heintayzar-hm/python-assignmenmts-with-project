@@ -10,6 +10,7 @@
 Clone this repository:
 ```
 git clone https://github.com/heintayzar-hm/python-project.git
+cd python-project
 ```
 After cloning, go to the project that you want to use. For example if you want to go to draw shaper app
 
