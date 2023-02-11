@@ -17,7 +17,7 @@ def error_handler(prompt): # error handler for non integer input
          return string_url
      else:
          error_msg()
-         error_handler(prompt)
+         return error_handler(prompt)
   
   
 
