@@ -1,6 +1,7 @@
 ## Python Projects
 
 - First Project: [Draw Shaper](./draw_shaper/)
+- Second Project [Web Scrapper](./web-scrapper/)
 
 ### Features
 - You can see in specific projects
