@@ -31,4 +31,4 @@ python3 main.py
 - Terminal with support for ANSI escape codes
 
 ### Contributing
-Feel free to contribute to the development of draw_shaper. Pull requests are welcome!
+Feel free to contribute to the development of web scrapper. Pull requests are welcome!
