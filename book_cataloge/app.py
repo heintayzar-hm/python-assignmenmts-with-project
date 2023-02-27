@@ -1,8 +1,10 @@
-import env
-from input_module import get_input
+import env_packages as env
+import c_io
+import book_package.book_module as Book
+
 class App:
     def __init__(self):
-        self.books = []
+        self.book = Book.BookModule()
 
     def run(self):
         user_choice = input(env.users_choice_text)
@@ -20,20 +22,8 @@ class App:
         self.run()
 
     def add_book(self):
-        self.books.append({
-            "name": get_input(env.add_book_dict["get_name"], "str"),
-            "author": get_input(env.add_book_dict["get_author"], "str"),
-            "date": get_input(env.add_book_dict["get_date"], "date"),
-            "get_url": get_input(env.add_book_dict["get_url"], "url")
-        })
-        print("Book added successfully")
+        self.book.add_book()
 
     def view_books(self):
-            for i, book in enumerate(self.books):
-                print(f"Index: {i+1}")
-                print(f"Book name: {book['name']}")
-                print(f"Book author: {book['author']}")
-                print(f"Book date: {book['date']}")
-                print(f"Book url: {book['get_url']}\n")
-
+        self.book.view_books()
 
