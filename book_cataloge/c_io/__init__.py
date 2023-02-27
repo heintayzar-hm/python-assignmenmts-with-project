@@ -1,2 +1,2 @@
-from .input import *
+from .input_output import *
 from .output_color import *

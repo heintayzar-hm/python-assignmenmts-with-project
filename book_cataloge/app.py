@@ -1,5 +1,5 @@
 import env_packages as env
-import c_io
+from c_io import *
 import book_package.book_module as Book
 
 class App:
@@ -10,20 +10,21 @@ class App:
         user_choice = input(env.users_choice_text)
 
         if(user_choice == '6'):
-            return print(env.good_bye_text)
+            return successful_exit_msg()
 
         if user_choice == '1':
-            self.add_book()
+            self.book.add_book()
         elif user_choice == '2':
-            self.view_books()
+            self.book.view_books()
+        elif user_choice == '3':
+            self.book.search_book()
+        elif user_choice == '4':
+            self.book.delete_book()
+        elif user_choice == '5':
+            self.book.edit_book()
         else:
-            print("Not implement Yet")
+            print(red("\nInvalid Input\n"))
 
         self.run()
 
-    def add_book(self):
-        self.book.add_book()
-
-    def view_books(self):
-        self.book.view_books()
 
